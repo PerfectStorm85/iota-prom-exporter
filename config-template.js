@@ -3,7 +3,7 @@ global.rootPath = path.normalize(path.join(__dirname, '..', '..'))
 
 module.exports = {
     // url and port of your IRI node
-    iota_node_url: process.env.iota_node_url || 'http://localhost:14265',
+    iota_node_url: process.env.iota_node_url || 'http://localhost:14270',
 
     // address and port where the exporter will be bound
     bind_address: process.env.bind_address || '127.0.0.1',
@@ -11,7 +11,7 @@ module.exports = {
 
     // address where zmq is being served (example: '127.0.0.1:5556')
     // *** Leave blank if ZMQ is not enabled on IRI ***
-    zmq_url: process.env.zmq_url || '127.0.0.1:5556',
+    zmq_url: process.env.zmq_url || 'iri:5556',
 
     // the frequency that this application will seek for new messages
     // and force a reconnect to the zmq queue if one is not found
